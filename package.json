@@ -4,9 +4,10 @@
   "description": "CDA JS backend checkpoint 15/09/2025",
   "scripts": {
     "start": "ts-node-dev ./src/index.ts",
-    "dev": "ts-node-dev ./src/index.ts"
+    "dev": "ts-node-dev ./src/index.ts", 
+    "seed": "ts-node ./src/scripts/seed.ts"
   },
-  "author": "Roxane VIDONI", 
+  "author": "Roxane", 
   "dependencies": {
     "node": "^24.8.0",
     "@apollo/server": "^4.10.2",

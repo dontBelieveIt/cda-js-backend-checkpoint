@@ -1,29 +1,33 @@
-import { Field, ObjectType } from "type-graphql";
-import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Field, ID, ObjectType } from "type-graphql";
+import { BaseEntity, Column, Entity, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
+import Continent from "./Continent";
 
 @Entity()
 @ObjectType()
 class Pays extends BaseEntity {
     @PrimaryGeneratedColumn()
-    @Field()
+    @Field(type => ID)
     id: number; 
 
     @Column()
     @Field()
-    code: string; 
+    codePays: string; 
     // example: "FR", "EN", "AN", ...
 
     @Column({unique : true})
     @Field()
-    nom : string; 
+    nomPays: string; 
     // example: "France", "Belgique", "Andorre"...
 
     @Column()
     @Field()
-    emoji : string
+    emojiPays : string
     // example : "🇫🇷", "🇧🇪", "🇦🇩"...
 
-}
+    @ManyToOne(() => Continent, continent => continent.codeContinent)
+    @Field()
+    continentCode: string;
 
+}
 
 export default Pays

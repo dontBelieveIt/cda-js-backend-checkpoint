@@ -1,4 +1,14 @@
-# Intitulé 
+# Comment l'utiliser 
+
+1. Copier le repo 
+2. Lancer un `npm install` après l'avoir copier
+3. Lancer la commande `npm run seed` pour initialiser les données de la base de données 
+4. Puis lancer la commande `npm run dev` pour lancer le serveur 
+5. vous pouvez ensuite vous rendre sur  : `http://localhost:3000/` 
+
+
+
+# Intitulé du Checkpoint
 
 Le but de ce checkpoint est de vérifier tes connaissances en développement backend.
 
