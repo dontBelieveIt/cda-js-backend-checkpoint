@@ -22,7 +22,7 @@ Le but de ce checkpoint est de vérifier tes connaissances en développement bac
     * un code (FR, BE, AN, ...),
     * un nom (France, Belgique, Andorre, ...),
     * un emoji (🇫🇷, 🇧🇪, 🇦🇩, ...),
-    * et qui enregistre cette entrée en BDD.
+    et qui enregistre cette entrée en BDD.
 
 7. Crée ensuite 2 queries :
     * Une qui renvoie la liste de tous les pays (avec pour attributs, pour chaque pays, le code, le nom, l'emoji)
